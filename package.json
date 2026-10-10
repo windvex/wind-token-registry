@@ -1,0 +1,31 @@
+{
+  "name": "@windcrypto/token-registry",
+  "version": "2.0.0",
+  "description": "JavaScript client for the Vexanium token registry",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.mjs"
+    }
+  },
+  "types": "./src/index.d.ts",
+  "files": ["src/", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check src/index.mjs && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windvex/wind-token-registry.git"
+  },
+  "homepage": "https://github.com/windvex/wind-token-registry",
+  "bugs": {
+    "url": "https://github.com/windvex/wind-token-registry/issues"
+  }
+}
